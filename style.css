@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: 0.5s name1 infinite ease-in-out;
+}
+
+#background h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 10rem;
+  color: white;
+}
+
+@keyframes name1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bounce1,
+.bounce2,
+.bounce3 {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: 1.5s bounce infinite ease-in-out both;
+  display: inline-block;
+  margin-top: 10rem;
+}
+
+.bounce1 {
+  animation-delay: 0.1s;
+}
+.bounce2 {
+  animation-delay: 0.3s;
+}
+.bounce3 {
+  animation-delay: 0.5s;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #background h1 {
+    font-size: 2rem;
+  }
+}
+
+/* final query */
+
+/* 1.both */
+/* key frame percentage */
+/* display: inline-block concept in bounce*/
