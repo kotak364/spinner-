@@ -1,8 +1,15 @@
+/* ======= css reset start ======== */
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* ======= css reset end ======== */
+
+/* ======= general styling start ======== */
+
 html {
   font-size: 62.5%;
 }
@@ -18,6 +25,21 @@ html {
   align-items: center;
 }
 
+/* ======= general styling end ======== */
+
+/* ======= typography start ======== */
+
+#background h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 10rem;
+  color: white;
+}
+
+/* ======= typography end ======== */
+
+/* ======= loader start ======== */
+
 .loader {
   width: 10rem;
   height: 10rem;
@@ -25,13 +47,6 @@ html {
   border-radius: 50%;
   border-top-color: white;
   animation: 0.5s name1 infinite ease-in-out;
-}
-
-#background h1 {
-  font-size: 3rem;
-  font-weight: 300;
-  margin-bottom: 10rem;
-  color: white;
 }
 
 @keyframes name1 {
@@ -73,6 +88,10 @@ html {
     transform: scale(1);
   }
 }
+/* ======= loader end ======== */
+
+
+/* ======= responsive design start ======== */
 
 @media screen and (max-width: 768px) {
   #background h1 {
@@ -80,8 +99,8 @@ html {
   }
 }
 
-/* final query */
+/* ======= responsive design end ======== */
 
-/* 1.both */
-/* key frame percentage */
-/* display: inline-block concept in bounce*/
+
+
+
